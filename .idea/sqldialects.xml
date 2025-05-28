@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/Myapp/backend/app/judgetool/service/service.go" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Myapp/backend/infra/db/db.go" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/Myapp/backend/infra/tables/problems.go" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/Myapp/backend/infra/tables/submissions.go" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/Myapp/backend/infra/tables/testcases.go" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/Myapp/backend/infra/tables/users.go" dialect="SQLite" />
+  </component>
+</project>
