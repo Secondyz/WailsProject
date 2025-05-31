@@ -1,7 +1,7 @@
 package main
 
 import (
-	problems "Myapp/api/problems"
+	"Myapp/api/problems"
 	"Myapp/backend/app/judgetool/handler"
 	"Myapp/backend/app/judgetool/service"
 	"context"

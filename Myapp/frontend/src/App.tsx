@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { CreateProblem } from "../wailsjs/go/main/App";
+import { CreateProblem } from "../wailsjs/go/problems/ProblemsAPI";
 import "./App.css";
 
 function ProblemForm() {
