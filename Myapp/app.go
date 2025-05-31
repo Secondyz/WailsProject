@@ -2,8 +2,6 @@ package main
 
 import (
 	"Myapp/api/problems"
-	"Myapp/backend/app/judgetool/handler"
-	"Myapp/backend/app/judgetool/service"
 	"context"
 	"database/sql"
 	"fmt"
@@ -18,21 +16,16 @@ type Handlers struct {
 	Problems *problems.ProblemsAPI
 }
 
-func setupHandlers(db *sql.DB) *Handlers {
-	return &Handlers{
-		Problems: problems.NewProblemsAPI(handler.NewProblemsHandler(service.NewProblemService(db))),
-	}
-}
-
 // NewApp creates a new App application struct
 func NewApp() *App {
 
 	db, err := sql.Open("sqlite3", "./data/judge.db")
 	if err != nil {
+		panic(err)
 	}
-
+	handlers := InitializeHandlers(db)
 	return &App{
-		handlers: setupHandlers(db),
+		handlers: handlers,
 	}
 }
 
